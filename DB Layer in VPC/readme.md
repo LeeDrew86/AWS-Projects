@@ -21,7 +21,7 @@ To simulate and address the complexities of the real-life scenario, I accessed a
 
 ### <span style="color:blue">**Architecture Diagram**</span>
 
-![Architecture diagram](https://github.com/LeeDrew86/AWS-Projects/blob/215d8fffeb8a8b56dbbffccaed119d880b05b17f/DB%20Layer%20in%20VPC/DB%20Layer%20in%20VPC-DIAGRAM.png)
+![Architecture diagram](https://github.com/LeeDrew86/AWS-Projects/blob/8134ae2d1585e92aa327a48c2a8b1264ddd55fd4/DB%20Layer%20in%20VPC/DB%20Layer%20in%20VPC-DIAGRAM.png)
 
 
 ## <span style="color:blue">**Step 1: Creating an Amazon RDS Database**</span>
