@@ -1,8 +1,15 @@
-# Cloud Engineering Lab Project
+# Creating a Database Layer within a VPC
 
 ## <span style="color:blue">**Scenario Overview**</span>
 
-In this lab project, I'm tasked with prototyping an architecture for a new web-based application, focusing on load balancers and managed databases like Amazon RDS.
+Imagine I'm part of a dynamic development team tasked with creating a web-based application
+
+Our goal is to design an architecture that delivers outstanding performance but also ensures reliability and scalability
+
+
+Lab Environment
+
+To simulate and address the complexities of the real-life scenario, I accessed a dedicated lab environment. This environment includes essential resources like Amazon VPC, network structures, security groups, EC2 instances, and associated profiles. Leveraging these resources, I'm ready to prototype, test, and refine the architecture that will drive the project's success.
 
 ## <span style="color:blue">**Lab Environment**</span>
 
