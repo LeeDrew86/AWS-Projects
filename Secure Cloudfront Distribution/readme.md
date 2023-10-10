@@ -1,3 +1,5 @@
+# Creating a Cloudfront Distribution with Secure S3 Origin
+
 ## Scenario Overview
 In a real-life scenario, this lab is highly relevant for securing the distribution of sensitive web assets. By configuring CloudFront with an Amazon S3 origin, the setup ensures robust security measures. Access control through Origin Access Identity (OAI), public access blockers, encryption, global content distribution, and high availability across multiple Availability Zones collectively create a secure content delivery network. This safeguards web assets from unauthorized access and potential threats, aligning with industry best practices and AWS's security standards.
 
