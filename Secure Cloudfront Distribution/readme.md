@@ -41,7 +41,7 @@ In this lab, I successfully configured Amazon CloudFront with an Amazon S3 origi
 - Confirmed seamless object retrieval through the CloudFront distribution.
 
 ## Architecture Diagram
-![Architecture Diagram](https://github.com/your-repository/architecture-diagram.png)
+![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/21be5405da47af28e3627a4a639e3fb1f37205c6/Secure%20Cloudfront%20Distribution/Cloudfront%20with%20S3%20Origin%20Diagram.png)
 
 ## Conclusion
 Through this lab, I demonstrated my ability to:
