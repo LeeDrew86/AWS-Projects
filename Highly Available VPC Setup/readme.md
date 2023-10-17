@@ -46,7 +46,8 @@ I set out to create an infrastructure that could withstand component failures wh
 
 ## Architecture Diagram
 
-![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/906ca12926288cd83c6de45b94ad454522719dcf/Configuring%20High%20Availabilty%20in%20VPC/Highly%20Available%20VPC%20Diagram.png)
+![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/65839cda8bfb26553c4fa2a04e7f2afbf924b104/Highly%20Available%20VPC%20Setup/Highly%20Available%20VPC%20Diagram.png)
+
 
 ## Conclusion
 
