@@ -1,78 +1,77 @@
 # Creating a Database Layer within a VPC
 
-## <span style="color:blue">**Scenario Overview**</span>
+## **Scenario Overview**
 
-Imagine I'm part of a dynamic development team tasked with creating a web-based application. The goal is to design an architecture that delivers outstanding performance but also ensures reliability and scalability
+In a practical, hands-on lab environment, I've taken on the task of designing a robust and scalable architecture for a web-based application, with a key focus on implementing a secure and efficient database layer within an Amazon Virtual Private Cloud (VPC).
 
-## <span style="color:blue">**Lab Environment**</span>
-To simulate a real-life scenario, I accessed a dedicated lab environment. 
-This environment includes essential resources:
+The goal was to create an architecture that delivers outstanding performance, reliability, and scalability, with a specific emphasis on the secure management of data through the implementation of a VPC-based database layer.
+
+## **Lab Environment**
+
+Working in a lab environment, I had access to essential resources:
 
 - Amazon Virtual Private Cloud (Amazon VPC)
-- Necessary network structure
-- Three security groups for traffic control
+- Network structure
+- Security groups
 - Two EC2 instances in a private subnet
-- Associated EC2 instance profile for AWS Systems Manager Session Manager
+- AWS Systems Manager Session Manager profile
 
-## <span style="color:blue">**Step 1: Creating an Amazon RDS Database**</span>
+## **Step 1: Creating an Amazon RDS Database**
 
-- Create an Aurora DB cluster compatible with MySQL.
-- Configure engine options.
-- Choose Dev/Test templates.
-- Configure DB cluster identifier, master username, and password.
-- Specify DB instance class and availability settings.
-- Set up virtual private cloud (VPC), DB subnet group, and security groups.
-- Skip Enhanced monitoring.
-- Complete additional configuration.
-- Create the database.
+- I created an Aurora DB cluster compatible with MySQL.
+- Engine options and templates were configured.
+- I specified DB cluster details, master credentials, and instance settings.
+- Setting up VPC, subnet groups, and security was my responsibility.
+- Enhanced monitoring was skipped.
+- I completed additional configurations and created the database.
 
-## <span style="color:blue">**Step 2: Creating and Configuring an Application Load Balancer**</span>
+## **Step 2: Creating and Configuring an Application Load Balancer**
 
-### <span style="color:blue">**Task 2.1: Creating a Target Group**</span>
+### **Task 2.1: Creating a Target Group**
 
-- Create a target group.
-- Configure target type, target group name, and VPC.
-- Register EC2 instances with the target group.
+- I established a target group for EC2 instance management.
+- Configuration included target type, name, and VPC settings.
+- Registration of EC2 instances was done by me.
 
-### <span style="color:blue">**Task 2.2: Creating an Application Load Balancer**</span>
+### **Task 2.2: Creating an Application Load Balancer**
 
-- Create an Application Load Balancer.
-- Configure load balancer name and network mapping.
-- Set security groups and listeners.
-- Save the configuration.
+- I designed the Application Load Balancer to manage incoming traffic.
+- Configuration involved naming, network mapping, security groups, and listeners.
+- Saving the configuration was my final step.
 
-## <span style="color:blue">**Step 3: Reviewing the Amazon RDS DB Instance Metadata**</span>
+## **Step 3: Reviewing the Amazon RDS DB Instance Metadata**
 
-- Navigate to the Amazon RDS console.
-- Check the status of the Aurora DB cluster.
-- Review connectivity and security details.
-- Copy the writer instance endpoint.
+- In the Amazon RDS console, I monitored the Aurora DB cluster.
+- I reviewed connectivity and security.
+- I copied the writer instance endpoint.
 
-## <span style="color:blue">**Step 4: Testing Application Connectivity to the Database**</span>
+## **Step 4: Testing Application Connectivity to the Database**
 
-- Access the Application Load Balancer URL.
-- Configure settings to connect to the database.
-- Verify application connectivity and functionality.
+- I tested the application's connectivity by accessing the Application Load Balancer URL.
+- Configuration for a secure database connection was my task.
+- I verified application functionality.
 
-## <span style="color:blue">**Optional Task: Creating an Amazon RDS Read Replica**</span>
+### **Step 5: Creating an Amazon RDS Read Replica**
 
-- Create a cross-Region read replica from the source DB instance.
-- Configure multi-AZ deployment and network settings.
-- Initiate the creation of the read replica.
-- 
-### <span style="color:blue">**Architecture Diagram**</span>
+- I created a cross-Region Read Replica from the source DB instance.
+- Then I configured network settings.
+- Finally, I initiated the creation of the Read Replica.
+
+This step is aimed at enhancing read operation scalability by creating a Read Replica of the source database.
+
+
+### **Architecture Diagram**
 
 ![Architecture diagram](https://github.com/LeeDrew86/AWS-Projects/blob/8134ae2d1585e92aa327a48c2a8b1264ddd55fd4/DB%20Layer%20in%20VPC/DB%20Layer%20in%20VPC-DIAGRAM.png)
 
-## <span style="color:blue">**Conclusion**</span>
+## **Conclusion**
 
-In this project, I successfully:
+In this project, I:
 
-- Created an Amazon RDS DB instance.
-- Set up an Application Load Balancer.
-- Configured target groups.
-- Registered targets.
-- Tested load balancing and application connectivity.
-- Reviewed Amazon RDS DB instance metadata.
+- Created an Amazon RDS DB instance for the web application's data layer.
+- Developed an Application Load Balancer for efficient traffic distribution.
+- Configured target groups and registered EC2 instances for load balancing.
+- Monitored Amazon RDS DB instance metadata.
+- Conducted tests to ensure application connectivity and functionality.
 
-Please note that while this project serves as a prototype, it may not meet all AWS Cloud best practices. High availability and redundancy considerations are addressed in other projects.
+This project demonstrates my ability to design a robust infrastructure for web applications, focusing on performance, reliability, and scalability. While it serves as a prototype, it showcases my skills relevant to cloud architecture and database management roles.
