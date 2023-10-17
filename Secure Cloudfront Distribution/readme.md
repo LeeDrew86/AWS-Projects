@@ -1,56 +1,47 @@
-## Scenario Overview
-In a real-life scenario, this lab is highly relevant for securing the distribution of sensitive web assets. By configuring CloudFront with an Amazon S3 origin, the setup ensures robust security measures. Access control through Origin Access Identity (OAI), public access blockers, encryption, global content distribution, and high availability across multiple Availability Zones collectively create a secure content delivery network. This safeguards web assets from unauthorized access and potential threats, aligning with industry best practices and AWS's security standards.
+# Securing Content Delivery with CloudFront and S3
+
+## Introduction
+In this lab, I successfully configured Amazon CloudFront with an Amazon S3 origin while implementing robust security measures. This hands-on experience demonstrates my ability to secure content delivery networks (CDNs) and aligns with industry best practices and AWS security standards.
 
 ## Lab Environment
-My dedicated lab environment was designed to mimic a real-world setup and came with:
+For this project, I utilized an Amazon VPC with a multi-availability zone network structure and set up an auto-scaling group of EC2 instances as public web servers. Employing an Elastic Load Balancer allowed for efficient load distribution.
 
-- Amazon VPC (with necessary network structure) deployed across multiple availabilty zones
-- An auto scaling group of EC2, serving as public web servers
-- Elastic Load Balancer
+### Step 1: Creating an S3 Bucket and Ensuring Public Access
+- To begin, I created a new S3 bucket.
+- I crafted a bucket policy to enable public access (refer to the provided [JSON bucket policy](https://github.com/your-repository/bucket-policy.json)).
 
-## Step 1: Creating an S3 Bucket and Configuring Public Access
-Next, I set up an S3 bucket and made it accessible to the public:
+**Note**: In the provided JSON policy, `"your-bucket-name"` is a placeholder representing the name of your Amazon S3 bucket. Please replace `"your-bucket-name"` with the actual name of the S3 bucket to which you want to apply this policy.
 
-- I created a new S3 bucket.
-- To allow public access, I edited the Block public access settings.
-- In the Bucket policy section, I copied and pasted a bucket policy into the editor. [The JSON bucket policy can be foudn inthe repository.]
+### Step 2: Uploading Objects to the Bucket
+- Within the newly created bucket, I established a new folder.
+- I then uploaded a sample PNG image for testing.
 
-**Note**: In the provided JSON policy, `"your-bucket-name"` is a placeholder representing the name of your Amazon S3 bucket. You should replace `"your-bucket-name"` with the actual name of the S3 bucket to which you want to apply this policy.
+### Step 3: Integrating the Bucket as an Additional CloudFront Origin
+- My next step involved integrating the S3 bucket as an additional origin for CloudFront.
+- I configured settings for the new origin, specifying the S3 bucket name as the origin and giving it a recognizable name within CloudFront distribution settings.
+- Creating a new Origin Access Identity (OAI) for enhanced security, I enforced access through CloudFront URLs.
+- Defining a new behavior for the S3 origin using CachedObjects/*.png ensured that only the test PNG file was retrieved from the CachedObjects folder of the S3 bucket.
+- I finalized origin settings by adding the S3 bucket as the origin to CloudFront.
 
-## Step 2: Putting Objects in the Bucket
-- I created a new folder within the bucket.
-- Then I uploaded a test image to the bucket.
-- Finally, I tested public access to the uploaded object.
+### Step 4: Enhancing Security with CloudFront OAI
+- To enhance security, I implemented access control, allowing S3 bucket access only through CloudFront using the OAI.
+- I also put in place measures to block public access, further strengthening my security posture.
 
-## Step 3: Adding the Bucket as an Additional Origin to CloudFront
-In this step, I integrated the S3 bucket as an additional origin for the CloudFront distribution:
+### Step 5: Testing Restricted Direct Access
+- A crucial step involved verifying that direct access to objects via Amazon S3 URL was successfully restricted.
 
-- I chose the existing CloudFront distribution.
-- I created a new origin for my S3 bucket.
-- Configuring the settings for the new origin was a crucial part.
-- Additionally, I created a new Origin Access Identity (OAI).
-- Lastly, I configured a new behavior for my S3 origin.
+### Step 6: Testing Access through CloudFront Distribution
+- In the final step, I confirmed object retrieval through the CloudFront distribution.
 
-## Step 4: Securing the Bucket with CloudFront OAI
-To enhance security, I ensured that the S3 bucket only allowed access through CloudFront using the Origin Access Identity (OAI):
-
-- I configured the bucket's policy to permit access only through CloudFront using the OAI.
-- Editing the allowed principal in the bucket policy was an essential step.
-- Public access blockers were also enabled to bolster security.
-
-## Step 5: Testing Direct Access to an Object in the Bucket Using the Amazon S3 URL
-I tested if direct access to an object in the S3 bucket was restricted:
-
-- Attempting to access an object using the Amazon S3 URL was a part of this test.
-- I confirmed that direct access was indeed restricted.
-
-## Step 6: Testing Access to the Object in the Bucket Using the CloudFront Distribution
-Finally, I verified if accessing an object through the CloudFront distribution worked as expected:
-
-- I accessed an object through the CloudFront distribution.
-- Confirmed that the object was retrieved from the CloudFront distribution.
-
-![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/785721f2bb0844c8eeb7fe5a3b79f443d2b0837a/Secure%20Cloudfront%20Distribution/Cloudfront%20with%20S3%20Origin%20Diagram.png)
+## Architecture Diagram
+![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/21be5405da47af28e3627a4a639e3fb1f37205c6/Secure%20Cloudfront%20Distribution/Cloudfront%20with%20S3%20Origin%20Diagram.png)
 
 ## Conclusion
-In conclusion, I successfully completed this lab, configuring Amazon CloudFront with an Amazon S3 origin and securing access to the S3 bucket. This experience closely resembled the real-world scenario of setting up a content delivery network (CDN) for a website and ensuring the security of assets hosted on Amazon S3.
+Through this project, I've demonstrated my ability to:
+
+- Set up and secure a content delivery network with Amazon CloudFront.
+- Effectively control access to Amazon S3 resources.
+- Address real-world challenges in securing content delivery.
+- Ensure high availability across multiple availability zones.
+
+This practical experience closely aligns with the skills and knowledge required for roles involving AWS, CDN setup, and cloud security.
