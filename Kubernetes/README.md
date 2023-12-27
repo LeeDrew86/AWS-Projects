@@ -1,13 +1,14 @@
 # Kubernetes "Hello World" Deployment
 
-## Project Overview
+## Overview
 
-This project explores the fundamentals of containerization and orchestration by deploying a simple "Hello World" application on Kubernetes. It's a hands-on learning experience covering:
+I explored the fundamentals of containerisation and orchestration by deploying a simple "Hello World" application on Kubernetes.
 
-* Crafting Dockerfiles
-* Configuring Kubernetes manifests
-* Using kubectl commands
-* Troubleshooting network connectivity
+I developed my ability to:
+* Craft Dockerfiles
+* Configure Kubernetes manifests
+* Use kubectl commands
+* Troubleshoot network connectivity
 
 ## Steps
 
@@ -27,20 +28,9 @@ This project explores the fundamentals of containerization and orchestration by 
     * Use `kubectl get service` to find the service's exposed port.
     * Visit the application in a web browser.
 
-## Learning and Challenges
-
-* Mastered Dockerfile creation and Kubernetes manifest configuration.
-* Honed kubectl skills for managing deployments and services.
-* Resolved network connectivity issues through troubleshooting.
-
 ## Future Exploration
 
 * Scale the application using `kubectl scale` to observe performance changes.
 * Delve into advanced Kubernetes features like volumes and secrets.
 * Deploy real-world applications on Kubernetes, leveraging gained knowledge.
-
-## Additional Insights
-
-* British English spellings used for consistency.
-* Tone is informative and professional, avoiding overly flowery language.
 
