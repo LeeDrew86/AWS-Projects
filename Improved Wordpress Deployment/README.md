@@ -42,6 +42,10 @@ This project involved setting up a highly available WordPress infrastructure on 
 - Utilised AWS documentation for setup and troubleshooting.
 - Faced challenges with ALB target group health due to misconfigured Security Group, resolved by adjusting the inbound rules to allow traffic from the ALB sG to the EC2 instance.
 
+## Architecture Diagram
+
+![Architecture Diagram](https://github.com/LeeDrew86/AWS-Projects/raw/main/Improved%20Wordpress%20Deployment/Improved%20WP%20Deploy%20Diagram.png)
+
 ## Future Enhancements and Security
 
 To further improve this build, I would take the following measures:
