@@ -12,7 +12,7 @@ In the "Git-Project" repository, basic files (`index.html`, `second.html`, `thir
 
 ### Setting Up EC2 and CodeDeploy
 
-Using AWS IAM, roles were created for CodeDeploy and EC2 to facilitate interaction. An EC2 instance was then launched, employing the IAM role as the instance profile, with the following user data to prepare the instance upon initialization:
+Using AWS IAM, roles were created for CodeDeploy and EC2 to facilitate interaction. An EC2 instance was then launched, employing the IAM role as the instance profile, with the following user data to prepare the instance upon initialisation:
 
 ![user data ec2](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/user%20data.png))
 
@@ -30,7 +30,7 @@ Encountering a pipeline failure, it was discovered that an `appspec.yml` file wa
 
 ### Expanding Automation with AppSpec Lifecycle Hooks
 
-Exploring automation within CI/CD processes, lifecycle hooks were integrated into `appspec.yml`. A script, `empty_dir.sh`, was created to remove files from the root directory prior to uploading files through the pipeline, revealing the potential for customization and automation.
+Exploring automation within CI/CD processes, lifecycle hooks were integrated into `appspec.yml`. A script, `empty_dir.sh`, was created to remove files from the root directory prior to uploading files through the pipeline, revealing the potential for customisation and automation.
 
 ![Lifecycle-Hooks-CodeDeploy](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/bash.png)
 
@@ -44,12 +44,4 @@ The project involved referencing AWS documentation for both setup and troublesho
 
 ### Future Plans
 
-Potential enhancements include refining automation, integrating multiple environments, and exploring further customization within the CI/CD process.
-
-### Architectural Considerations
-
-Placeholder for future architectural diagrams and potential project expansion.
-
-## References and Resources
-
-Utilization of AWS documentation and learning resources significantly contributed to the project's success.
+Potential enhancements include refining automation, integrating multiple environments, and exploring further customisation within the CI/CD process.
