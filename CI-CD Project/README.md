@@ -14,7 +14,7 @@ In the "Git-Project" repository, basic files (`index.html`, `second.html`, `thir
 
 Using AWS IAM, roles were created for CodeDeploy and EC2 to facilitate interaction. An EC2 instance was then launched, employing the IAM role as the instance profile, with the following user data to prepare the instance upon initialization:
 
-![EC2-CodeDeploy-Setup](IMAGE_PLACEHOLDER_HERE)
+![user data ec2](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/user%20data.png))
 
 ### CodeDeploy Application and Deployment Group
 
@@ -26,13 +26,13 @@ Following the successful instance setup, AWS CodeDeploy was employed to continue
 
 Encountering a pipeline failure, it was discovered that an `appspec.yml` file was required in the source code's root directory for CodeDeploy functionality. The `appspec.yml` file was generated, directing CodeDeploy to transfer files from the source to the specified destination, i.e., the root folder of the Apache Web Server.
 
-![AppSpec-CodeDeploy](IMAGE_PLACEHOLDER_HERE)
+![AppSpec-CodeDeploy](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/appspec.png)
 
 ### Expanding Automation with AppSpec Lifecycle Hooks
 
 Exploring automation within CI/CD processes, lifecycle hooks were integrated into `appspec.yml`. A script, `empty_dir.sh`, was created to remove files from the root directory prior to uploading files through the pipeline, revealing the potential for customization and automation.
 
-![Lifecycle-Hooks-CodeDeploy](IMAGE_PLACEHOLDER_HERE)
+![Lifecycle-Hooks-CodeDeploy](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/bash.png)
 
 ## Conclusion and Future Endeavours
 
