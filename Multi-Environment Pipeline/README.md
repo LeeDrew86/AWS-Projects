@@ -4,7 +4,7 @@
 
 This project builds upon prior experience in CI/CD, aiming to simulate a real-world scenario with multiple environments—development and production. 
 
-[Project Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/main/Multi-Environment%20Pipeline/CICD%20Project.drawio.png)
+![Project Diagram](https://github.com/LeeDrew86/AWS-Projects/blob/main/Multi-Environment%20Pipeline/CICD%20Project.drawio.png)
 
 ### Development Setup
 
