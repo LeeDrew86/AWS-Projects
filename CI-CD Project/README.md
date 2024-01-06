@@ -23,7 +23,7 @@ Following the successful instance setup, AWS CodeDeploy was employed to continue
 
 ### CodePipeline Setup
 
-I then created a new pipeline, connecting my AWS account to GitHub and the appropriate repository. Choosing the previously creatd applciation and deployment groups, the pipeline was created and deployment began.
+I then created a new pipeline, connecting my AWS account to GitHub and the appropriate repository. Choosing the previously created applciation and deployment groups, the pipeline was created and deployment began.
 
 ## Enabling Deployment and Automation
 
