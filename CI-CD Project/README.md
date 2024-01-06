@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Having gained familiarity with GitHub for uploading projects, this CI/CD project aims to implement a streamlined Continuous Integration/Continuous Deployment (CI/CD) process using AWS CodeDeploy. It's a continuation of previous practice, wherein several files were created in VSCode for experimentation. These included `index.html`, `second.html`, and `third.html`, serving as learning material for Git commands (`commit` and `push`), staging changes, and utilizing `.gitignore` to conceal a confidential text file. Despite an initial attempt, interruptions postponed its completion, prompting a return to bring the project to fruition.
+Having gained familiarity with GitHub for uploading projects, this CI/CD project aims to implement a streamlined Continuous Integration/Continuous Deployment (CI/CD) process using AWS CodeDeploy and AWS CodePipeline. It's a continuation of previous practice, wherein several files were created in VSCode for experimentation. These included `index.html`, `second.html`, and `third.html`, serving as learning material for Git commands (`commit` and `push`), staging changes, and utilising `.gitignore` to conceal a confidential text file.
 
 ![project diagram](https://github.com/LeeDrew86/AWS-Projects/blob/main/CI-CD%20Project/CICD%20Project.png)
 ### Practice Repository and Initial Setup
