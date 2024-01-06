@@ -21,6 +21,10 @@ Using AWS IAM, roles were created for CodeDeploy and EC2 to facilitate interacti
 
 Following the successful instance setup, AWS CodeDeploy was employed to continue pipeline setup. An application and deployment group were established, integrating the previously generated IAM role.
 
+### CodePipeline Setup
+
+I then created a new pipeline, connecting my AWS account to GitHub and the appropriate repository. Choosing the previously creatd applciation and deployment groups, the pipeline was created and deployment began.
+
 ## Enabling Deployment and Automation
 
 ### AppSpec Configuration for CodeDeploy
