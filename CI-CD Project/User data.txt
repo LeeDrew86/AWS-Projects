@@ -1,0 +1,20 @@
+
+#!/bin/bash
+
+# Update and install Apache using yum
+yum update -y
+yum install httpd -y
+
+# Start and enable Apache service
+systemctl start httpd
+systemctl enable httpd
+
+# Install CodeDeploy agent dependencies
+yum install ruby -y
+yum install wget -y
+
+# Download and install CodeDeploy agent
+wget https://aws-codedeploy-eu-west-1.s3.eu-west-1.amazonaws.com/
+latest/install
+chmod +x ./install
+./install auto
