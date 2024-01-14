@@ -2,7 +2,7 @@
 
 ## **Scenario Overview**
 
-In a hands-on lab environment, I wsa tasked with designing a robust and scalable architecture for a web-based application, with a key focus on implementing a secure and efficient database layer within an Amazon Virtual Private Cloud (VPC).
+I was tasked with designing a robust and scalable architecture for a web-based application, with a key focus on implementing a secure and efficient database layer within an Amazon Virtual Private Cloud (VPC).
 
 The goal was to create an architecture that delivers outstanding performance, reliability, and scalability, with a specific emphasis on the secure management of data through the implementation of a VPC-based database layer.
 
@@ -16,9 +16,10 @@ Working in a lab environment, I had access to these resources:
 - Two EC2 instances in a private subnet
 - AWS Systems Manager Session Manager profile
 
-## **Step 1: Creating an Amazon RDS Database**
+## **Step 1: Creating VPC, EC2 and an Amazon RDS Database**
 
-- To begin with, I reviewed the setup of the existing VPC, subnet groups, and security groups.
+- To begin with, I setup a VPC with 2 public and private subnets.
+- I then created security grousp and launched an EC2 in each private subnet.
 - I created an Aurora DB cluster compatible with MySQL.
 - Engine options and templates were configured.
 - I specified DB cluster details, master credentials, and instance settings.
