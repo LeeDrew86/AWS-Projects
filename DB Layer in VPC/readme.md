@@ -18,7 +18,7 @@ Working in a lab environment, I had access to these resources:
 
 ## **Step 1: Creating an Amazon RDS Database**
 
-- To begin with, I set a up VPC, subnet groups, and security groups.
+- To begin with, I reviewed the setup of the existing VPC, subnet groups, and security groups.
 - I created an Aurora DB cluster compatible with MySQL.
 - Engine options and templates were configured.
 - I specified DB cluster details, master credentials, and instance settings.
