@@ -2,13 +2,13 @@
 
 ## **Scenario Overview**
 
-In a practical, hands-on lab environment, I've taken on the task of designing a robust and scalable architecture for a web-based application, with a key focus on implementing a secure and efficient database layer within an Amazon Virtual Private Cloud (VPC).
+In a hands-on lab environment, I wsa tasked with designing a robust and scalable architecture for a web-based application, with a key focus on implementing a secure and efficient database layer within an Amazon Virtual Private Cloud (VPC).
 
 The goal was to create an architecture that delivers outstanding performance, reliability, and scalability, with a specific emphasis on the secure management of data through the implementation of a VPC-based database layer.
 
 ## **Lab Environment**
 
-Working in a lab environment, I had access to essential resources:
+Working in a lab environment, I had access to these resources:
 
 - Amazon Virtual Private Cloud (Amazon VPC)
 - Network structure
@@ -18,12 +18,10 @@ Working in a lab environment, I had access to essential resources:
 
 ## **Step 1: Creating an Amazon RDS Database**
 
+- To begin with, I set a up VPC, subnet groups, and security groups.
 - I created an Aurora DB cluster compatible with MySQL.
 - Engine options and templates were configured.
 - I specified DB cluster details, master credentials, and instance settings.
-- Setting up VPC, subnet groups, and security was my responsibility.
-- Enhanced monitoring was skipped.
-- I completed additional configurations and created the database.
 
 ## **Step 2: Creating and Configuring an Application Load Balancer**
 
@@ -31,13 +29,12 @@ Working in a lab environment, I had access to essential resources:
 
 - I established a target group for EC2 instance management.
 - Configuration included target type, name, and VPC settings.
-- Registration of EC2 instances was done by me.
+- I then registered the EC2 instances.
 
 ### **Task 2.2: Creating an Application Load Balancer**
 
 - I designed the Application Load Balancer to manage incoming traffic.
 - Configuration involved naming, network mapping, security groups, and listeners.
-- Saving the configuration was my final step.
 
 ## **Step 3: Reviewing the Amazon RDS DB Instance Metadata**
 
@@ -48,9 +45,8 @@ Working in a lab environment, I had access to essential resources:
 ## **Step 4: Testing Application Connectivity to the Database**
 
 - I tested the application's connectivity by accessing the Application Load Balancer URL.
-- Configuration for a secure database connection was my task.
-- I verified application functionality.
-
+- I then logged into the database using previously configured credentials.
+- 
 ### **Step 5: Creating an Amazon RDS Read Replica**
 
 - I created a cross-Region Read Replica from the source DB instance.
@@ -58,7 +54,6 @@ Working in a lab environment, I had access to essential resources:
 - Finally, I initiated the creation of the Read Replica.
 
 This step is aimed at enhancing read operation scalability by creating a Read Replica of the source database.
-
 
 ### **Architecture Diagram**
 
@@ -74,4 +69,4 @@ In this project, I:
 - Monitored Amazon RDS DB instance metadata.
 - Conducted tests to ensure application connectivity and functionality.
 
-This project demonstrates my ability to design a robust infrastructure for web applications, focusing on performance, reliability, and scalability. While it serves as a prototype, it showcases my skills relevant to cloud architecture and database management roles.
+This project demonstrates my ability to design a robust infrastructure for web applications, focusing on performance, reliability, and scalability through a highly available database layer. While it serves as a prototype, it showcases my skills relevant to cloud architecture and database management roles.
