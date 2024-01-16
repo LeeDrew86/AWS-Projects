@@ -9,7 +9,7 @@ The goal was to create an architecture that delivers outstanding performance, re
 ## **Step 1: Creating VPC, EC2 and an Amazon RDS Database**
 
 - To begin with, I setup a VPC with 2 public and private subnets.
-- I then created security grousp and launched an EC2 in each private subnet.
+- I then created security groups and launched an EC2 in each private subnet.
 - I created an Aurora DB cluster compatible with MySQL.
 - Engine options and templates were configured.
 - I specified DB cluster details, master credentials, and instance settings.
