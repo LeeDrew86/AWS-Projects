@@ -31,14 +31,13 @@ The goal was to create an architecture that delivers outstanding performance, re
 
 - In the Amazon RDS console, I monitored the Aurora DB cluster.
 - I reviewed connectivity and security.
-- I copied the writer instance endpoint.
 
 ## **Step 4: Testing Application Connectivity to the Database**
 
 - I tested the application's connectivity by accessing the Application Load Balancer URL.
 - I then logged into the database using previously configured credentials.
-- 
-### **Step 5: Creating an Amazon RDS Read Replica**
+
+## **Step 5: Creating an Amazon RDS Read Replica**
 
 - I created a cross-Region Read Replica from the source DB instance.
 - Then I configured network settings.
