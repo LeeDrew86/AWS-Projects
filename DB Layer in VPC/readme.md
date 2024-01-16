@@ -6,16 +6,6 @@ I was tasked with designing a robust and scalable architecture for a web-based a
 
 The goal was to create an architecture that delivers outstanding performance, reliability, and scalability, with a specific emphasis on the secure management of data through the implementation of a VPC-based database layer.
 
-## **Lab Environment**
-
-Working in a lab environment, I had access to these resources:
-
-- Amazon Virtual Private Cloud (Amazon VPC)
-- Network structure
-- Security groups
-- Two EC2 instances in a private subnet
-- AWS Systems Manager Session Manager profile
-
 ## **Step 1: Creating VPC, EC2 and an Amazon RDS Database**
 
 - To begin with, I setup a VPC with 2 public and private subnets.
