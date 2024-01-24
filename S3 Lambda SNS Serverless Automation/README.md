@@ -26,6 +26,9 @@ This project aims to implement serverless automation using AWS Lambda, S3, and S
 - **Step 5: Customizing Notification Content**
   - Extracted relevant parameters from the JSON received via email.
   - Used Python dictionaries to structure the code for publishing desired information (e.g., bucket name and object name).
+
+      ![Code Screenshot Placeholder](https://github.com/LeeDrew86/AWS-Projects/blob/cf8a2c25f6d41285fe4be685f94389bbf515e75b/S3%20Lambda%20SNS%20Serverless%20Automation/python.png)
+    
   - Tested the Lambda function with an S3 upload to ensure correct extraction and publication of information.
 
 ## Conclusion
